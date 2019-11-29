@@ -5,7 +5,7 @@
 			<br>
 			<div class="typography">
 				<h2>Typography</h2>
-				<h3 class="strong green">Headings:</h3>
+				<h4 class="strong green">Headings:</h4>
 				<div class="inlines-blocks">
 					<h3 class="heading">heading 1</h3>
 					<h1>Design system</h1>
@@ -30,6 +30,24 @@
 					<h3 class="heading">heading 6</h3>
 					<h6>Design system</h6>
 				</div>
+				<br>
+				<h4 class="strong green">Display titles:</h4>
+				<div class="inlines-blocks">
+					<h3 class="heading">display 1</h3>
+					<h1 class="display-1">Design system</h1>
+				</div>
+				<div class="inlines-blocks">
+					<h3 class="heading">display 2</h3>
+					<h2 class="display-2">Design system</h2>
+				</div>
+				<div class="inlines-blocks">
+					<h3 class="heading">display 3</h3>
+					<h3 class="display-3">Design system</h3>
+				</div>
+				<div class="inlines-blocks">
+					<h3 class="heading">display 4</h3>
+					<h4 class="display-4">Design system</h4>
+				</div>
 			</div>
 			<br>
 			<br>
@@ -38,6 +56,10 @@
 </template>
 
 <style>
+	.typography > h2 {
+		margin-bottom: 60px;
+	}
+
 	.typography .strong {
 		margin-bottom: 15px;
 	}
@@ -69,6 +91,17 @@
 	@media (max-width: 768px) {
 		.img-banner {
 			height: 350px;
+		}
+	}
+
+	@media (max-width: 540px) {
+		.typography .inlines-blocks {
+			margin: 30px 0;
+		}
+
+		.typography .inlines-blocks > * {
+			display: block;
+			margin: 5px 0;
 		}
 	}
 </style>

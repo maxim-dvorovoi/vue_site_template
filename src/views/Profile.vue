@@ -1,14 +1,14 @@
 <template>
-	<div class="contact">
+	<div class="profile">
 		<div class="content-center">
-			<h3>Contact</h3>
+			<h2>Profile</h2>
 		</div>
 	</div>
 </template>
 
 <script>
 	export default {
-		name: 'contact',
+		name: 'profile',
 		methods: {
 
 		},

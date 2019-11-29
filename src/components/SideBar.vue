@@ -4,11 +4,11 @@
             <router-link to="/" @click.native="$store.commit('showHideSideBar')">
                 <div>Home</div>
             </router-link>
-            <router-link to="/portfolio" @click.native="$store.commit('showHideSideBar')">
-                <div>Portfolio</div>
+            <router-link to="/profile" @click.native="$store.commit('showHideSideBar')">
+                <div>Profile</div>
             </router-link>
-            <router-link to="/contact" @click.native="$store.commit('showHideSideBar')">
-                <div>Contact</div>
+            <router-link to="/login" @click.native="$store.commit('showHideSideBar')">
+                <div>Login</div>
             </router-link>
         </div>
     </div>

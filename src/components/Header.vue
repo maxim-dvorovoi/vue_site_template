@@ -30,10 +30,10 @@
           <router-link to="/">Home</router-link>
         </span>
         <span>
-          <router-link to="/portfolio">Portfolio</router-link>
+          <router-link to="/profile">Profile</router-link>
         </span>
         <span>
-          <router-link to="/contact">Contact</router-link>
+          <router-link to="/login">Login</router-link>
         </span>
       </div>
     </div>
@@ -49,7 +49,7 @@
   .logo {
     display: inline-block;
     font-size: 30px;
-    color: #3e3e3e;
+    color: rgba(54,99,86,1);
   }
 
   .routes {
@@ -57,7 +57,7 @@
   }
 
   .routes > span {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   .routes > span > a {

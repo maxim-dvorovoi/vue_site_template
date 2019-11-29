@@ -81,6 +81,26 @@
 		font-size: 1rem;
 	}
 
+	.display-1, .display-2, .display-3, .display-4 {
+		font-weight: 600;
+	}
+
+	.display-1 {
+		font-size: 3.3rem;
+	}
+
+	.display-2 {
+		font-size: 2.75rem;
+	}
+
+	.display-3 {
+		font-size: 2.1875rem;
+	}
+
+	.display-4 {
+		font-size: 1.6275rem;
+	}
+
 	.strong {
 		font-weight: 500;
 	}
