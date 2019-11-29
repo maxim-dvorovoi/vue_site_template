@@ -1,6 +1,8 @@
 <template>
 	<div class="portfolio">
-		<h3>Portfolio</h3>
+		<div class="content-center">
+			<h3>Portfolio</h3>
+		</div>
 	</div>
 </template>
 

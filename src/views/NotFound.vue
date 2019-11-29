@@ -1,10 +1,8 @@
 <template>
 	<div class="not-found">
-		<h3>Error: 404 (Not found)</h3>
-		<br>
-		<div class="ban">
-			<i class="fas fa-ban"></i>
+		<div class="content-center">
+			<h2>Error: 404 (Not found)</h2>
+			<h3>Please go to the home page</h3>
 		</div>
-		<h2>Please go to the home page</h2>
 	</div>
 </template>

@@ -2,7 +2,7 @@
     <div class="sidebar">
         <div class="routes">
             <router-link to="/" @click.native="$store.commit('showHideSideBar')">
-                <div>Resume</div>
+                <div>Home</div>
             </router-link>
             <router-link to="/portfolio" @click.native="$store.commit('showHideSideBar')">
                 <div>Portfolio</div>
@@ -43,6 +43,10 @@
     }
 
     .routes > a > div:hover {
+        background-color: #ffffff1f;
+    }
+
+    .router-link-exact-active > div {
         background-color: #ffffff1f;
     }
 

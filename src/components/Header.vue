@@ -71,6 +71,10 @@
     box-shadow: inset 0 -2px 0 0 rgba(54,99,86,1);
   }
 
+  .routes .router-link-exact-active {
+    box-shadow: inset 0 -2px 0 0 rgba(54,99,86,1);
+  }
+
   .burger {
     display: none;
     cursor: pointer;

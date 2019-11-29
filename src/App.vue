@@ -20,6 +20,11 @@
 </template>
 
 <style>
+	#app {
+		height: 100%;
+		background-color: white;
+	}
+
 	* {
 		font-family: 'Poppins', sans-serif;
 	}
@@ -35,39 +40,10 @@
 		-webkit-tap-highlight-color: transparent;
 	}
 
-	h1 {
-		color: white;
-		font-weight: 700;
-		font-size: 45px;
-		line-height: 60px;
-		letter-spacing: 2px;
-		margin: 0;
-	}
-
-	h2 {
+	h1, h2, h3, h4, h5, h6 {
 		color: #3e3e3e;
+		line-height: 1.3;
 		font-weight: 300;
-		font-size: 30px;
-		line-height: 2;
-	}
-
-	h3 {
-		color: #3e3e3e;
-		font-weight: 300;
-		font-size: 24px;
-		line-height: 2;
-	}
-
-	h4 {
-		color: #3e3e3e;
-		font-weight: 300;
-		line-height: 2;
-	}
-
-	h5 {
-		color: #3e3e3e;
-		font-weight: 400;
-		line-height: 2;
 	}
 
 	hr {
@@ -81,9 +57,51 @@
 		text-decoration: none;
 	}
 
-	#app {
-		height: 100%;
-		background-color: white;
+	.h1, h1 {
+		font-size: 2.5rem;
+	}
+
+	.h2, h2 {
+		font-size: 2rem;
+	}
+
+	.h3, h3 {
+		font-size: 1.75rem;
+	}
+
+	.h4, h4 {
+		font-size: 1.5rem;
+	}
+
+	.h5, h5 {
+		font-size: 1.25rem;
+	}
+
+	.h6, h6 {
+		font-size: 1rem;
+	}
+
+	.strong {
+		font-weight: 500;
+	}
+
+	.bold {
+		font-weight: 600;
+	}
+
+	.heading {
+		letter-spacing: .025em;
+		font-size: .95rem;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
+	.inlines-blocks > * {
+		display: inline-block;
+	}
+
+	.green {
+		color: rgba(54,99,86,1)
 	}
 
 	.main {
@@ -112,7 +130,7 @@
 	}
 
 	.content-center {
-		max-width: 1280px;
+		max-width: 1024px;
 		margin: 0 auto;
 		padding: 0 20px;
 	}

@@ -1,6 +1,8 @@
 <template>
 	<div class="contact">
-		<h3>Contact</h3>
+		<div class="content-center">
+			<h3>Contact</h3>
+		</div>
 	</div>
 </template>
 
