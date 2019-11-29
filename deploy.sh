@@ -12,7 +12,6 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git remote add origin https://github.com/maxim-dvorovoi/vue_site_template.git
-git push -u origin master:gh-pages
+git push -u https://github.com/maxim-dvorovoi/vue_site_template.git master:gh-pages
 
 cd -
