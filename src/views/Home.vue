@@ -3,6 +3,26 @@
 		<div class="img-banner"></div>
 		<div class="content-center">
 			<br>
+			<div class="basic-elements">
+				<h2>Basic elements</h2>
+				<h4 class="strong green">Buttons:</h4>
+				<h6>Pick your size</h6>
+				<div class="inlines-blocks">
+					<Btn size="small">Small</Btn>
+					<Btn>Regular</Btn>
+					<Btn size="large">Large button</Btn>
+				</div>
+				<h6>Pick your color</h6>
+				<div class="inlines-blocks">
+					<Btn>Success</Btn>
+					<Btn color="grey">Cancel</Btn>
+					<Btn color="orange">Warning</Btn>
+					<Btn color="red">Danger</Btn>
+					<Btn color="blue">Info</Btn>
+					<Btn color="white">Neutral</Btn>
+				</div>
+			</div>
+			<br>
 			<div class="typography">
 				<h2>Typography</h2>
 				<h4 class="strong green">Headings:</h4>
@@ -56,6 +76,10 @@
 </template>
 
 <style>
+	.basic-elements .inlines-blocks > * {
+		margin: 0 10px 10px 0;
+	}
+
 	.typography > h2 {
 		margin-bottom: 60px;
 	}
@@ -107,8 +131,11 @@
 </style>
 
 <script>
+import Btn from "../components/Btn";
+
 export default {
 	name: 'home',
+	components: {Btn},
 	methods: {
 
 	},

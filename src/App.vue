@@ -6,8 +6,8 @@
 			<div class="dot-3"></div>
 		</div>
 
-		<div id="index" :class="'main' + (loading ? '' : '-active')">
-			<div :class="'side' + ($store.state.sideBar ? ' active' : '')">
+		<div id="index" :class="loading ? 'main' : 'main-active'">
+			<div class="side" :class="[{'active': $store.state.sideBar}]">
 				<Header/>
 				<div class="content" id="content">
 					<router-view/>
@@ -358,9 +358,9 @@
 </style>
 
 <script>
-	import Header from '@/components/Header.vue'
-	import SideBar from '@/components/SideBar.vue'
-	import Footer from '@/components/Footer.vue'
+	import Header from './components/Header.vue'
+	import SideBar from './components/SideBar.vue'
+	import Footer from './components/Footer.vue'
 
 	export default {
 		components: {
@@ -376,6 +376,11 @@
 		methods: {
 			setLoading() {
 				setTimeout(() => this.loading = false, 700);
+			},
+			sleep(timeout) {
+				return new Promise(resolve => {
+					setTimeout(resolve, timeout);
+				});
 			},
 		},
 		mounted() {

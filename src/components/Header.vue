@@ -3,7 +3,13 @@
     <div class="content-center">
       <router-link to="/">
         <div class="logo">
-          SITE
+          <div class="custom-logo">
+            <div class="font25">Creative</div>
+            <div class="font25">
+              Max
+              <i class="font20 fas fa-leaf"></i>
+            </div>
+          </div>
         </div>
       </router-link>
 
@@ -42,8 +48,15 @@
 
 <style scoped>
   .header {
+    position: sticky;
+    top: 0;
+    background-color: white;
     height: 80px;
     line-height: 80px;
+    -webkit-box-shadow: 0px -2px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -2px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -2px 10px 0px rgba(0,0,0,0.75);
+    z-index: 1000;
   }
 
   .logo {
@@ -110,13 +123,46 @@
     stroke-dashoffset: -102px;
   }
 
+  .custom-logo {
+    padding: 15px 0;
+  }
+
+  .custom-logo div {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .custom-logo i {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   @media (max-width: 1024px) {
+    .header {
+      height: 60px;
+      line-height: 60px;
+    }
+
     .burger {
       display: inline-block;
     }
 
     .routes > span {
       display: none;
+    }
+
+    .custom-logo {
+      padding: 10px 0;
+    }
+
+    .custom-logo div {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    .custom-logo i {
+      font-size: 16px;
+      line-height: 16px;
     }
   }
 </style>
